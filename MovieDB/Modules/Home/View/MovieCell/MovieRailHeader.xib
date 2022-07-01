@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" restorationIdentifier="MovieRailHeader" reuseIdentifier="MovieRailHeader" id="MDt-PQ-VMe" customClass="MovieRailHeader" customModule="MovieDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEV-pP-OPj">
+                    <rect key="frame" x="20" y="0.0" width="394" height="55"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="qZ1-pI-wBP"/>
+            <constraints>
+                <constraint firstItem="MEV-pP-OPj" firstAttribute="top" secondItem="MDt-PQ-VMe" secondAttribute="top" id="4Q3-Hk-eMQ"/>
+                <constraint firstAttribute="trailing" secondItem="MEV-pP-OPj" secondAttribute="trailing" id="TV3-Og-TcJ"/>
+                <constraint firstItem="qZ1-pI-wBP" firstAttribute="bottom" secondItem="MEV-pP-OPj" secondAttribute="bottom" id="WA9-BL-C7B"/>
+                <constraint firstItem="MEV-pP-OPj" firstAttribute="leading" secondItem="MDt-PQ-VMe" secondAttribute="leading" constant="20" id="kEi-rk-2vJ"/>
+            </constraints>
+            <connections>
+                <outlet property="headerTitle" destination="MEV-pP-OPj" id="vvH-jO-MG8"/>
+            </connections>
+            <point key="canvasLocation" x="231.8840579710145" y="-60.602678571428569"/>
+        </collectionReusableView>
+    </objects>
+</document>
